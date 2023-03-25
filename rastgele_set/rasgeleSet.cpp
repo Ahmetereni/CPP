@@ -1,11 +1,9 @@
-﻿// rasgeleSet.cpp : Bu dosya 'main' işlevi içeriyor. Program yürütme orada başlayıp biter.
-//
-
 #include <iostream>
 #include <unordered_set>
 
 #include <stdlib.h>
 #include <time.h>
+#define MAIN_LOOP true
 #define MAX_DEGER 9
 #define MIN_DEGER 0
 using namespace std;
@@ -29,9 +27,9 @@ void print_random_set() {
 }
 
 void main_loop() {
-	bool again = true;
+	
 
-	while (again) {
+	while (MAIN_LOOP) {
 		print_random_set();
 		string answer = "n";
 		cout << "DO again ? (n for no)\n\n";
